@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="dubbo搭建," />
 
 
 
@@ -84,16 +84,20 @@
 
 
 
-<meta name="description" content="仗剑走天涯">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="dubbo admin环境">
+<meta property="og:type" content="article">
+<meta property="og:title" content="dubbo环境搭建">
+<meta property="og:url" content="http://yoursite.com/2016/10/22/dubbo-build/index.html">
 <meta property="og:site_name" content="博W博">
-<meta property="og:description" content="仗剑走天涯">
-<meta property="og:updated_time" content="2016-08-21T08:00:02.000Z">
+<meta property="og:description" content="dubbo admin环境">
+<meta property="og:image" content="http://yoursite.com/images/tomcat_download.jpg">
+<meta property="og:image" content="http://yoursite.com/images/zookeeper-download.jpg">
+<meta property="og:image" content="http://yoursite.com/images/zookeeper-admin.jpg">
+<meta property="og:updated_time" content="2016-10-22T13:44:35.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="仗剑走天涯">
+<meta name="twitter:title" content="dubbo环境搭建">
+<meta name="twitter:description" content="dubbo admin环境">
+<meta name="twitter:image" content="http://yoursite.com/images/tomcat_download.jpg">
 
 
 
@@ -114,15 +118,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/22/dubbo-build/"/>
 
-  <title>
-  
-
-  
-    分类 | 博W博
-  
-</title>
+  <title> dubbo环境搭建 | 博W博 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -153,7 +151,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -243,16 +241,226 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
     
-      <div class="category-all-page">
-        <div class="category-all-title">
-            目前共计 3 个分类
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                dubbo环境搭建
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-22T11:35:58+08:00" content="2016-10-22">
+              2016-10-22
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/环境搭建/" itemprop="url" rel="index">
+                    <span itemprop="name">环境搭建</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/环境搭建/dubbo/" itemprop="url" rel="index">
+                    <span itemprop="name">dubbo</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/22/dubbo-build/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/22/dubbo-build/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/22/dubbo-build/" class="leancloud_visitors" data-flag-title="dubbo环境搭建">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
         </div>
-        <div class="category-all">
-          <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/环境搭建/">环境搭建</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/环境搭建/dubbo/">dubbo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/环境搭建/github/">github</a><span class="category-list-count">1</span></li></ul></li></ul>
-        </div>
-      </div>
+      </header>
     
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="dubbo-admin环境"><a href="#dubbo-admin环境" class="headerlink" title="dubbo admin环境"></a>dubbo admin环境</h2><a id="more"></a>
+<p>1 下载tomcat <a href="http://tomcat.apache.org/download-70.cgi" target="_blank" rel="external">Tomcat下载</a>，如下图所示：</p>
+<p><img src="/images/tomcat_download.jpg" alt=""></p>
+<p>2 下载dubbo源码：打开客户端，输入命令：git clone <a href="https://github.com/alibaba/dubbo.git" target="_blank" rel="external">https://github.com/alibaba/dubbo.git</a></p>
+<p>3 编译dubbo源码：进入dubbo目录，输入命令：mvn clean package -Dmaven.test.skip=true</p>
+<p>4 拷贝war包到tomcat的webapps目录下：<em>*</em>/dubbo/dubbo-admin/target/dubbo-admin-2.5.4-SNAPSHOT.war</p>
+<p>5 tomcat会自动解压缩war包，修改dubbo.properties文件，添加以下内容：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">dubbo.registry.address=zookeeper://127.0.0.1:2181</div><div class="line">dubbo.admin.root.password=root</div><div class="line">dubbo.admin.guest.password=guest</div></pre></td></tr></table></figure>
+<p>6 下载zookeeper <a href="http://www-eu.apache.org/dist/zookeeper/zookeeper-3.4.6/" target="_blank" rel="external">zookeeper下载</a>,如下图所示：</p>
+<p><img src="/images/zookeeper-download.jpg" alt=""></p>
+<p>7 由于zookeeper在启动时会在<em>*</em>/zookeeper/conf目录下加载zoo.cfg文件，所以在该目录下执行命令：cp zoo_sample.cfg zoo.cfg</p>
+<p>8 启动zookeeper，在目录<em>*</em>/zookeeper/bin下执行命令：./zkServer.sh startup</p>
+<p>9 启动tomcat，在目录/apache-tomcat-7.0.72/bin下执行命令：./startup.sh</p>
+<p>10 到此为止便可查看dubbo-admin监控：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">输入url：http://localhost:8080/dubbo-admin-2.5.4-SNAPSHOT/</div><div class="line">用户名：root</div><div class="line">密码：root</div></pre></td></tr></table></figure>
+<p>页面出现如下表示正常：<br><img src="/images/zookeeper-admin.jpg" alt=""></p>
+<p>到此为止dubbo-admin搭建完成，接下来我们来看如何搭建dubbo的consumer和provider</p>
+<h2 id="dubbo-工程搭建"><a href="#dubbo-工程搭建" class="headerlink" title="dubbo 工程搭建"></a>dubbo 工程搭建</h2>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/WeChatpay.jpg" alt="博W博 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.jpg" alt="博W博 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/dubbo搭建/" rel="tag">#dubbo搭建</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/20/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
   </div>
 
 
@@ -261,6 +469,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/10/22/dubbo-build/"
+           data-title="dubbo环境搭建" data-url="http://yoursite.com/2016/10/22/dubbo-build/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -280,8 +496,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/wb.jpeg"
@@ -351,6 +576,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#dubbo-admin环境"><span class="nav-number">1.</span> <span class="nav-text">dubbo admin环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dubbo-工程搭建"><span class="nav-number">2.</span> <span class="nav-text">dubbo 工程搭建</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -454,6 +690,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
