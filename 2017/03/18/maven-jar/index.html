@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Maven," />
 
 
 
@@ -84,15 +84,22 @@
 
 
 
-<meta name="description" content="仗剑走天涯">
-<meta property="og:type" content="website">
-<meta property="og:title" content="博W博">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="为什么要打一个可运行的jar包1 当代码写完，本地测试通过，就可以说已经开发完成了吗？ NO！！！如果这段代码要放到某台机器（不是你的机器）上运行怎么办，比如，你的机器被网段隔离，没有权限访问某些资源，这时候最简洁的方式莫过于扔一个jar包到这台机器上，直接执行java -jar *.jar
+2 对于一个不懂代码的小白想用你的代码怎么办？让他搭各种环境，然后找到代码入口，还不如让他自杀。。。
+我在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="打一个可执行的jar包">
+<meta property="og:url" content="http://yoursite.com/2017/03/18/maven-jar/index.html">
 <meta property="og:site_name" content="博W博">
-<meta property="og:description" content="仗剑走天涯">
+<meta property="og:description" content="为什么要打一个可运行的jar包1 当代码写完，本地测试通过，就可以说已经开发完成了吗？ NO！！！如果这段代码要放到某台机器（不是你的机器）上运行怎么办，比如，你的机器被网段隔离，没有权限访问某些资源，这时候最简洁的方式莫过于扔一个jar包到这台机器上，直接执行java -jar *.jar
+2 对于一个不懂代码的小白想用你的代码怎么办？让他搭各种环境，然后找到代码入口，还不如让他自杀。。。
+我在">
+<meta property="og:updated_time" content="2017-03-19T14:36:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博W博">
-<meta name="twitter:description" content="仗剑走天涯">
+<meta name="twitter:title" content="打一个可执行的jar包">
+<meta name="twitter:description" content="为什么要打一个可运行的jar包1 当代码写完，本地测试通过，就可以说已经开发完成了吗？ NO！！！如果这段代码要放到某台机器（不是你的机器）上运行怎么办，比如，你的机器被网段隔离，没有权限访问某些资源，这时候最简洁的方式莫过于扔一个jar包到这台机器上，直接执行java -jar *.jar
+2 对于一个不懂代码的小白想用你的代码怎么办？让他搭各种环境，然后找到代码入口，还不如让他自杀。。。
+我在">
 
 
 
@@ -113,9 +120,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/18/maven-jar/"/>
 
-  <title> 博W博 </title>
+  <title> 打一个可执行的jar包 | 博W博 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -146,9 +153,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -235,9 +240,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -257,10 +262,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/03/18/maven-jar/" itemprop="url">
-                  打一个可执行的jar包
-                </a>
+                打一个可执行的jar包
               
             
           </h1>
@@ -316,9 +318,7 @@
       
 
       
-        
-          
-            <h2 id="为什么要打一个可运行的jar包"><a href="#为什么要打一个可运行的jar包" class="headerlink" title="为什么要打一个可运行的jar包"></a>为什么要打一个可运行的jar包</h2><p>1 当代码写完，本地测试通过，就可以说已经开发完成了吗？ NO！！！如果这段代码要放到某台机器（不是你的机器）上运行怎么办，比如，你的机器被网段隔离，没有权限访问某些资源，这时候最简洁的方式莫过于扔一个jar包到这台机器上，直接执行java -jar <em>*</em>.jar</p>
+        <h2 id="为什么要打一个可运行的jar包"><a href="#为什么要打一个可运行的jar包" class="headerlink" title="为什么要打一个可运行的jar包"></a>为什么要打一个可运行的jar包</h2><p>1 当代码写完，本地测试通过，就可以说已经开发完成了吗？ NO！！！如果这段代码要放到某台机器（不是你的机器）上运行怎么办，比如，你的机器被网段隔离，没有权限访问某些资源，这时候最简洁的方式莫过于扔一个jar包到这台机器上，直接执行java -jar <em>*</em>.jar</p>
 <p>2 对于一个不懂代码的小白想用你的代码怎么办？让他搭各种环境，然后找到代码入口，还不如让他自杀。。。</p>
 <p>我在网上找了各种资料，大多不能成功，在此特别整理一下~~  </p>
 <h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>1 第三方依赖jar找不到<br>原因：没有采用maven的打包插件，将classPath路径添加到MANIFEST.MF文件中，没有指定第三方jar包的路径<br>解决方法<br>a 指定jar包到lib路径下，并将lib路径添加为classPath路径，可在pom.xml文件中添加如下配置，如下所示：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></div><div class="line">            <span class="comment">&lt;!-- The configuration of maven-jar-plugin --&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-jar-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">                <span class="comment">&lt;!-- The configuration of the plugin --&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></div><div class="line">                    <span class="comment">&lt;!-- Configuration of the archiver --&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">archive</span>&gt;</span></div><div class="line"></div><div class="line">                        <span class="comment">&lt;!--生成的jar中，不要包含pom.xml和pom.properties这两个文件--&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">addMavenDescriptor</span>&gt;</span>false<span class="tag">&lt;/<span class="name">addMavenDescriptor</span>&gt;</span></div><div class="line"></div><div class="line">                        <span class="comment">&lt;!-- Manifest specific configuration --&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">manifest</span>&gt;</span></div><div class="line">                            <span class="comment">&lt;!--</span></div><div class="line">                                是否要把第三方jar放到manifest的classpath中</div><div class="line">                            --&gt;</div><div class="line">                            <span class="tag">&lt;<span class="name">addClasspath</span>&gt;</span>true<span class="tag">&lt;/<span class="name">addClasspath</span>&gt;</span></div><div class="line">                            <span class="comment">&lt;!--</span></div><div class="line">                               生成的manifest中classpath的前缀，因为要把第三方jar放到lib目录下，所以classpath的前缀是lib/</div><div class="line">                           --&gt;</div><div class="line">                            <span class="tag">&lt;<span class="name">classpathPrefix</span>&gt;</span>lib/<span class="tag">&lt;/<span class="name">classpathPrefix</span>&gt;</span></div><div class="line">                            <span class="comment">&lt;!--</span></div><div class="line">                                应用的main class</div><div class="line">                            --&gt;</div><div class="line">                            <span class="tag">&lt;<span class="name">mainClass</span>&gt;</span>dpm.tool.producer.RequestProduce<span class="tag">&lt;/<span class="name">mainClass</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;/<span class="name">manifest</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;/<span class="name">archive</span>&gt;</span></div><div class="line">                    <span class="comment">&lt;!--</span></div><div class="line">                        过滤掉不希望包含在jar中的文件</div><div class="line">                    --&gt;</div><div class="line">                    <span class="tag">&lt;<span class="name">excludes</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>$&#123;project.basedir&#125;/xml/*<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;/<span class="name">excludes</span>&gt;</span></div><div class="line">                <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></div><div class="line"></div><div class="line">            <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-dependency-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">executions</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">execution</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">id</span>&gt;</span>copy-dependencies<span class="tag">&lt;/<span class="name">id</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">phase</span>&gt;</span>package<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">goals</span>&gt;</span></div><div class="line">                            <span class="tag">&lt;<span class="name">goal</span>&gt;</span>copy-dependencies<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></div><div class="line">                            <span class="tag">&lt;<span class="name">outputDirectory</span>&gt;</span>$&#123;project.build.directory&#125;/lib<span class="tag">&lt;/<span class="name">outputDirectory</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></div><div class="line">                <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></div></pre></td></tr></table></figure></p>
@@ -326,322 +326,103 @@
 <p>注意，MainClass的main方法入口类（dpm.tool.producer.RequestProduce）所在jar包必须和第三方依赖jar包在同一路径LIB_JARS下</p>
 <p>3 classpath<em>:/与classpath:的区别：<br>classpath：只会到你的class路径中查找找文件;<br>classpath</em>：不仅包含class路径，还包括jar文件中(class路径)进行查找<br>现象：classpath*:/可以加载第三方jar包中的xml文件，而classpath:加载不到，由于我所依赖的是jar文件中文件，所以必须使用第二个</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/WeChatpay.jpg" alt="博W博 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.jpg" alt="博W博 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
     </div>
+  </div>
 
-    <div>
+
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/22/dubbo-build/" itemprop="url">
-                  手把手教你搭建dubbo环境
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-22T11:35:58+08:00" content="2016-10-22">
-              2016-10-22
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/环境搭建/" itemprop="url" rel="index">
-                    <span itemprop="name">环境搭建</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/环境搭建/dubbo/" itemprop="url" rel="index">
-                    <span itemprop="name">dubbo</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/22/dubbo-build/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/22/dubbo-build/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/10/22/dubbo-build/" class="leancloud_visitors" data-flag-title="手把手教你搭建dubbo环境">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
+            <a href="/tags/Maven/" rel="tag">#Maven</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h2 id="dubbo-admin环境"><a href="#dubbo-admin环境" class="headerlink" title="dubbo admin环境"></a>dubbo admin环境</h2><p>众所周知，阿里开发的dubbo框架现在广泛应用于各大互联网公司，dubbo框架为我们提供了RPC、分布式服务等等很多便利，那么我们就来看一下，如何搭建起一个简单的dubbo服务呢，准备好你的键盘，跟着我一探究竟吧~~</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/10/22/dubbo-build/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/22/dubbo-build/" rel="next" title="手把手教你搭建dubbo环境">
+                <i class="fa fa-chevron-left"></i> 手把手教你搭建dubbo环境
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/20/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-20T21:13:17+08:00" content="2016-08-20">
-              2016-08-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/环境搭建/" itemprop="url" rel="index">
-                    <span itemprop="name">环境搭建</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/环境搭建/github/" itemprop="url" rel="index">
-                    <span itemprop="name">github</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/20/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/20/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/08/20/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p><em>Welcome to</em> <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/08/20/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -649,6 +430,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/03/18/maven-jar/"
+           data-title="打一个可执行的jar包" data-url="http://yoursite.com/2017/03/18/maven-jar/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -668,8 +457,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/wb.jpeg"
@@ -739,6 +537,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要打一个可运行的jar包"><span class="nav-number">1.</span> <span class="nav-text">为什么要打一个可运行的jar包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#遇到的问题"><span class="nav-number">2.</span> <span class="nav-text">遇到的问题</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -842,6 +651,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
